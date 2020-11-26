@@ -1,0 +1,16 @@
+title: mall
+description: a vuejs mall
+template:
+  repo: mall-template
+  name: mall
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
